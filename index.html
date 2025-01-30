@@ -24,9 +24,73 @@
         font-family: "Poppins", serif;
       }
     </style>
+    <!-- custom tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bike-primary": " rgb(231, 111, 81)",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="font-poppins">
     <!-- header section -->
-    <header></header>
+    <header class="max-w-screen-xl mx-auto">
+      <nav class="mt-5 lg:mt-9">
+        <div class="navbar bg-base-100">
+          <div class="flex-1">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="text-xl lg:text-3xl font-bold">Biker Zone</a>
+          </div>
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 space-x-3">
+              <li class="font-medium"><a>Home</a></li>
+              <li class="font-medium"><a>Shop</a></li>
+              <li class="font-medium"><a>News</a></li>
+              <li class="font-medium"><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="md:ml-7">
+            <a
+              class="btn bg-bike-primary text-white text-base lg:text-xl font-bold px-6 lg:px-10"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main class="max-w-screen-xl mx-auto"></main>
   </body>
 </html>
